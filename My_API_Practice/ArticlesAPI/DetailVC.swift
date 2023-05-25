@@ -1,0 +1,20 @@
+//
+//  DetailVC.swift
+//  My_API_Practice
+//
+//  Created by MacbookAir_32 on 25/05/23.
+//
+
+import UIKit
+
+class DetailVC: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+
+
+}
