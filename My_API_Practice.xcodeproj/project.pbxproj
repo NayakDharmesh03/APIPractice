@@ -86,13 +86,13 @@
 		E35095E32A1C87AC00ADF343 /* My_API_Practice */ = {
 			isa = PBXGroup;
 			children = (
-				E3E0D5BF2A1F548E0057002A /* ArticlesAPI */,
-				E3E0D5B42A1F42610057002A /* PhotoAPI */,
+				E3E0D5BF2A1F548E0057002A /* GetArticlesAPI */,
+				E3E0D5B42A1F42610057002A /* GetPhotoAPI */,
 				E3E0D5AD2A1F33B30057002A /* Resources */,
 				E3E0D5AC2A1F33A00057002A /* View */,
 				E3E0D5A82A1F330E0057002A /* Application */,
 				E3E0D5AB2A1F337D0057002A /* DemoFIles */,
-				E3E0D5AA2A1F33650057002A /* APIManager */,
+				E3E0D5AA2A1F33650057002A /* GetTodoData */,
 				E35095F82A1CB7AF00ADF343 /* JsonCountry.json */,
 				E35095F22A1C87AE00ADF343 /* Info.plist */,
 			);
@@ -108,14 +108,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		E3E0D5AA2A1F33650057002A /* APIManager */ = {
+		E3E0D5AA2A1F33650057002A /* GetTodoData */ = {
 			isa = PBXGroup;
 			children = (
 				E3E0D5AE2A1F350A0057002A /* APIGetData.swift */,
 				E3E0D5B22A1F36830057002A /* GetDataCell.swift */,
 				E3E0D5B02A1F35FD0057002A /* APIData.swift */,
 			);
-			path = APIManager;
+			path = GetTodoData;
 			sourceTree = "<group>";
 		};
 		E3E0D5AB2A1F337D0057002A /* DemoFIles */ = {
@@ -145,7 +145,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E3E0D5B42A1F42610057002A /* PhotoAPI */ = {
+		E3E0D5B42A1F42610057002A /* GetPhotoAPI */ = {
 			isa = PBXGroup;
 			children = (
 				E3E0D5B52A1F42A90057002A /* Photos.swift */,
@@ -153,10 +153,10 @@
 				E3E0D5BB2A1F43C30057002A /* PhotosCell.swift */,
 				E3E0D5BC2A1F43C30057002A /* PhotosCell.xib */,
 			);
-			path = PhotoAPI;
+			path = GetPhotoAPI;
 			sourceTree = "<group>";
 		};
-		E3E0D5BF2A1F548E0057002A /* ArticlesAPI */ = {
+		E3E0D5BF2A1F548E0057002A /* GetArticlesAPI */ = {
 			isa = PBXGroup;
 			children = (
 				E3E0D5C02A1F54B20057002A /* Articles.swift */,
@@ -165,7 +165,7 @@
 				E3E0D5C62A1F576B0057002A /* ArticlesCell.swift */,
 				E3E0D5C72A1F576B0057002A /* ArticlesCell.xib */,
 			);
-			path = ArticlesAPI;
+			path = GetArticlesAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
