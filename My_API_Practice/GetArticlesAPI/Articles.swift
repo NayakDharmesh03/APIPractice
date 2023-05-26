@@ -8,12 +8,12 @@
 import Foundation
 
 struct ArticleData:Codable{
-    let author:String?
-    let title:String?
-    let urltoImage:String?
-    let content:String?
+       let author: String?
+       let title: String
+       let urlToImage: String?
+       let content: String?
 }
 struct NewsData : Codable{
     let status: String
-    let articles:[ArticleData]
+    let articles: [ArticleData]
 }

@@ -12,15 +12,15 @@ class DetailArticles: UIViewController {
     @IBOutlet weak var newsPhoto: UIImageView!
     @IBOutlet weak var contentLbl: UILabel!
     
-    var newsContent : ArticleData = ArticleData(author: "", title: "", urltoImage: "", content: "")
+    var newsContent : ArticleData = ArticleData(author: "", title: "", urlToImage: "", content: "")
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         headlineLbl.text = newsContent.title
         
-        if newsContent.urltoImage != nil{
-            let url = URL(string: newsContent.urltoImage!)
+        if newsContent.urlToImage != nil{
+            let url = URL(string: newsContent.urlToImage!)
             newsPhoto.downloadImage(from: url!)
             newsPhoto.contentMode = .scaleAspectFill
         }

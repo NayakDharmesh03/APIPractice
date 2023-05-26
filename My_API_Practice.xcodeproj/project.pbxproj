@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		26C8372419C4A5C882E0C1A0 /* Pods_My_API_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567181B447B73B08AA2A9439 /* Pods_My_API_Practice.framework */; };
+		E332C1E82A20753000E1BB03 /* KingFisherLibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C1E72A20753000E1BB03 /* KingFisherLibraryVC.swift */; };
+		E332C1EB2A20755E00E1BB03 /* DogsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C1EA2A20755E00E1BB03 /* DogsData.swift */; };
+		E332C1ED2A20757200E1BB03 /* ImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C1EC2A20757200E1BB03 /* ImagesTableViewCell.swift */; };
+		E332C1EF2A2085D800E1BB03 /* LazyLoadingImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C1EE2A2085D800E1BB03 /* LazyLoadingImageVC.swift */; };
+		E332C1F22A20861600E1BB03 /* LazyLoadingCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C1F12A20861600E1BB03 /* LazyLoadingCollectionCell.swift */; };
 		E35095E52A1C87AC00ADF343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35095E42A1C87AC00ADF343 /* AppDelegate.swift */; };
 		E35095E72A1C87AC00ADF343 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35095E62A1C87AC00ADF343 /* SceneDelegate.swift */; };
 		E35095E92A1C87AC00ADF343 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35095E82A1C87AC00ADF343 /* ViewController.swift */; };
@@ -35,6 +40,11 @@
 		2622F2429957408293F8882A /* Pods-My_API_Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_API_Practice.release.xcconfig"; path = "Target Support Files/Pods-My_API_Practice/Pods-My_API_Practice.release.xcconfig"; sourceTree = "<group>"; };
 		567181B447B73B08AA2A9439 /* Pods_My_API_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_API_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00FBD81475CF027CC7B4416 /* Pods-My_API_Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_API_Practice.debug.xcconfig"; path = "Target Support Files/Pods-My_API_Practice/Pods-My_API_Practice.debug.xcconfig"; sourceTree = "<group>"; };
+		E332C1E72A20753000E1BB03 /* KingFisherLibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KingFisherLibraryVC.swift; path = My_API_Practice/KingFisherLibrary/KingFisherLibraryVC.swift; sourceTree = SOURCE_ROOT; };
+		E332C1EA2A20755E00E1BB03 /* DogsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsData.swift; sourceTree = "<group>"; };
+		E332C1EC2A20757200E1BB03 /* ImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTableViewCell.swift; sourceTree = "<group>"; };
+		E332C1EE2A2085D800E1BB03 /* LazyLoadingImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyLoadingImageVC.swift; sourceTree = "<group>"; };
+		E332C1F12A20861600E1BB03 /* LazyLoadingCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyLoadingCollectionCell.swift; sourceTree = "<group>"; };
 		E35095E12A1C87AC00ADF343 /* My_API_Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_API_Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35095E42A1C87AC00ADF343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35095E62A1C87AC00ADF343 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +88,6 @@
 				B00FBD81475CF027CC7B4416 /* Pods-My_API_Practice.debug.xcconfig */,
 				2622F2429957408293F8882A /* Pods-My_API_Practice.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +97,25 @@
 				567181B447B73B08AA2A9439 /* Pods_My_API_Practice.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E332C1E92A20753900E1BB03 /* KingFisherLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				E332C1E72A20753000E1BB03 /* KingFisherLibraryVC.swift */,
+				E332C1EA2A20755E00E1BB03 /* DogsData.swift */,
+				E332C1EC2A20757200E1BB03 /* ImagesTableViewCell.swift */,
+			);
+			path = KingFisherLibrary;
+			sourceTree = "<group>";
+		};
+		E332C1F02A2085E300E1BB03 /* LazyLoading Images */ = {
+			isa = PBXGroup;
+			children = (
+				E332C1EE2A2085D800E1BB03 /* LazyLoadingImageVC.swift */,
+				E332C1F12A20861600E1BB03 /* LazyLoadingCollectionCell.swift */,
+			);
+			path = "LazyLoading Images";
 			sourceTree = "<group>";
 		};
 		E35095D82A1C87AC00ADF343 = {
@@ -111,6 +139,8 @@
 		E35095E32A1C87AC00ADF343 /* My_API_Practice */ = {
 			isa = PBXGroup;
 			children = (
+				E332C1F02A2085E300E1BB03 /* LazyLoading Images */,
+				E332C1E92A20753900E1BB03 /* KingFisherLibrary */,
 				E3E0D5BF2A1F548E0057002A /* GetArticlesAPI */,
 				E3E0D5B42A1F42610057002A /* GetPhotoAPI */,
 				E3E0D5AD2A1F33B30057002A /* Resources */,
@@ -311,9 +341,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E332C1F22A20861600E1BB03 /* LazyLoadingCollectionCell.swift in Sources */,
 				E3E0D5B62A1F42A90057002A /* Photos.swift in Sources */,
 				E35095E92A1C87AC00ADF343 /* ViewController.swift in Sources */,
 				E3E0D5B12A1F35FD0057002A /* APIData.swift in Sources */,
+				E332C1ED2A20757200E1BB03 /* ImagesTableViewCell.swift in Sources */,
+				E332C1EB2A20755E00E1BB03 /* DogsData.swift in Sources */,
 				E3E0D5CD2A1F5ECA0057002A /* DetailArticles.swift in Sources */,
 				E35095E52A1C87AC00ADF343 /* AppDelegate.swift in Sources */,
 				E3ED37562A1E2BA200D7F230 /* NewsTableViewCell.swift in Sources */,
@@ -323,9 +356,11 @@
 				E3E0D5C32A1F55FE0057002A /* GetArticles.swift in Sources */,
 				E3ED37542A1E2AD800D7F230 /* FetchDataViewController.swift in Sources */,
 				E3E0D5B82A1F43450057002A /* PhotosAPIManager.swift in Sources */,
+				E332C1E82A20753000E1BB03 /* KingFisherLibraryVC.swift in Sources */,
 				E3E0D5C82A1F576B0057002A /* ArticlesCell.swift in Sources */,
 				E3E0D5B32A1F36830057002A /* GetDataCell.swift in Sources */,
 				E3E0D5AF2A1F350A0057002A /* APIGetData.swift in Sources */,
+				E332C1EF2A2085D800E1BB03 /* LazyLoadingImageVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

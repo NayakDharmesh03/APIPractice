@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class GetArticles: UIViewController {
 
@@ -85,9 +86,10 @@ extension GetArticles : UITableViewDataSource , UITableViewDelegate{
         
         cell.headlineLbl.text = articlesList[indexPath.row].title
         
-        if articlesList[indexPath.row].urltoImage != nil
+        if articlesList[indexPath.row].urlToImage != nil
         {
-            let url = URL(string: articlesList[indexPath.row].urltoImage!)
+            let url = URL(string: articlesList[indexPath.row].urlToImage!)
+            cell.newsPhoto.kf.setImage(with: url)
             cell.newsPhoto.downloadImage(from: url!)
             cell.newsPhoto.contentMode = .scaleAspectFill
         }
