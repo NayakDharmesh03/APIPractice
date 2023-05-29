@@ -7,5 +7,8 @@ target 'My_API_Practice' do
 
   # Pods for My_API_Practice
   pod 'Kingfisher', '~> 7.0'
+  pod 'Alamofire'
+  pod 'SwiftyJSON', '~> 4.0'
+
 
 end

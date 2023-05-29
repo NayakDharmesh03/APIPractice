@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		26C8372419C4A5C882E0C1A0 /* Pods_My_API_Practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567181B447B73B08AA2A9439 /* Pods_My_API_Practice.framework */; };
+		E31B68B62A24B84E00D20D2B /* NewsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31B68B52A24B84E00D20D2B /* NewsTableCell.swift */; };
 		E332C1E82A20753000E1BB03 /* KingFisherLibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C1E72A20753000E1BB03 /* KingFisherLibraryVC.swift */; };
 		E332C1EB2A20755E00E1BB03 /* DogsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C1EA2A20755E00E1BB03 /* DogsData.swift */; };
 		E332C1ED2A20757200E1BB03 /* ImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E332C1EC2A20757200E1BB03 /* ImagesTableViewCell.swift */; };
@@ -34,12 +35,14 @@
 		E3E0D5CD2A1F5ECA0057002A /* DetailArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0D5CC2A1F5ECA0057002A /* DetailArticles.swift */; };
 		E3ED37542A1E2AD800D7F230 /* FetchDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED37532A1E2AD700D7F230 /* FetchDataViewController.swift */; };
 		E3ED37562A1E2BA200D7F230 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED37552A1E2BA200D7F230 /* NewsTableViewCell.swift */; };
+		E3F531432A24B62700F65396 /* AlamofireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F531422A24B62700F65396 /* AlamofireVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2622F2429957408293F8882A /* Pods-My_API_Practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_API_Practice.release.xcconfig"; path = "Target Support Files/Pods-My_API_Practice/Pods-My_API_Practice.release.xcconfig"; sourceTree = "<group>"; };
 		567181B447B73B08AA2A9439 /* Pods_My_API_Practice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_API_Practice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00FBD81475CF027CC7B4416 /* Pods-My_API_Practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_API_Practice.debug.xcconfig"; path = "Target Support Files/Pods-My_API_Practice/Pods-My_API_Practice.debug.xcconfig"; sourceTree = "<group>"; };
+		E31B68B52A24B84E00D20D2B /* NewsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewsTableCell.swift; path = "/Users/macbookair_32/Desktop/Dharmesh/GIT API/My_API_Practice/Alamofire/NewsTableCell.swift"; sourceTree = "<absolute>"; };
 		E332C1E72A20753000E1BB03 /* KingFisherLibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KingFisherLibraryVC.swift; path = My_API_Practice/KingFisherLibrary/KingFisherLibraryVC.swift; sourceTree = SOURCE_ROOT; };
 		E332C1EA2A20755E00E1BB03 /* DogsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsData.swift; sourceTree = "<group>"; };
 		E332C1EC2A20757200E1BB03 /* ImagesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesTableViewCell.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		E3E0D5CC2A1F5ECA0057002A /* DetailArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArticles.swift; sourceTree = "<group>"; };
 		E3ED37532A1E2AD700D7F230 /* FetchDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataViewController.swift; sourceTree = "<group>"; };
 		E3ED37552A1E2BA200D7F230 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		E3F531422A24B62700F65396 /* AlamofireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		E35095E32A1C87AC00ADF343 /* My_API_Practice */ = {
 			isa = PBXGroup;
 			children = (
+				E3F531412A24B60300F65396 /* Alamofire */,
 				E332C1F02A2085E300E1BB03 /* LazyLoading Images */,
 				E332C1E92A20753900E1BB03 /* KingFisherLibrary */,
 				E3E0D5BF2A1F548E0057002A /* GetArticlesAPI */,
@@ -221,6 +226,15 @@
 				E3E0D5C72A1F576B0057002A /* ArticlesCell.xib */,
 			);
 			path = GetArticlesAPI;
+			sourceTree = "<group>";
+		};
+		E3F531412A24B60300F65396 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				E31B68B52A24B84E00D20D2B /* NewsTableCell.swift */,
+				E3F531422A24B62700F65396 /* AlamofireVC.swift */,
+			);
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,7 +358,9 @@
 				E332C1F22A20861600E1BB03 /* LazyLoadingCollectionCell.swift in Sources */,
 				E3E0D5B62A1F42A90057002A /* Photos.swift in Sources */,
 				E35095E92A1C87AC00ADF343 /* ViewController.swift in Sources */,
+				E3F531432A24B62700F65396 /* AlamofireVC.swift in Sources */,
 				E3E0D5B12A1F35FD0057002A /* APIData.swift in Sources */,
+				E31B68B62A24B84E00D20D2B /* NewsTableCell.swift in Sources */,
 				E332C1ED2A20757200E1BB03 /* ImagesTableViewCell.swift in Sources */,
 				E332C1EB2A20755E00E1BB03 /* DogsData.swift in Sources */,
 				E3E0D5CD2A1F5ECA0057002A /* DetailArticles.swift in Sources */,

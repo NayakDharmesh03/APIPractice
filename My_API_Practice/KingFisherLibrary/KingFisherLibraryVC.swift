@@ -16,7 +16,7 @@ class KingFisherLibraryVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        fetchData()
         // Do any additional setup after loading the view.
     }
  

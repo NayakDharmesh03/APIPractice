@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/macbookair_32/Desktop/Dharmesh/GIT API/My_API_Practice/Alamofire/NewsTableCell.swift">
+   </FileRef>
+   <FileRef
       location = "group:My_API_Practice.xcodeproj">
    </FileRef>
    <FileRef

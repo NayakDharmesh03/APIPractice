@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GGW-fx-Ztc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f6I-dP-PTP">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -519,6 +519,173 @@
             </objects>
             <point key="canvasLocation" x="7429.7709923664115" y="80.985915492957744"/>
         </scene>
+        <!--AlamofireVC-->
+        <scene sceneID="AQw-3y-Bmk">
+            <objects>
+                <viewController id="VJW-oq-hox" customClass="AlamofireVC" customModule="My_API_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cG9-zA-ylf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxC-h7-H85">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="News" id="zGr-d4-9uU"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dGM-08-c0y">
+                                <rect key="frame" x="0.0" y="153" width="393" height="665"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="newsCell" rowHeight="414" id="i72-Zh-DhP" customClass="NewsTableCell" customModule="My_API_Practice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="414"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i72-Zh-DhP" id="0ar-Ha-ftJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="414"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Caa-6K-L98">
+                                                    <rect key="frame" x="10" y="35.333333333333343" width="373" height="300"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="300" id="AAk-RI-wNo"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqH-R5-8Hw">
+                                                    <rect key="frame" x="10" y="5" width="373" height="20.333333333333332"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <color key="textColor" systemColor="systemRedColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqx-an-RrW">
+                                                    <rect key="frame" x="10" y="345.33333333333331" width="373" height="57.666666666666686"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="Caa-6K-L98" secondAttribute="trailing" constant="10" id="37E-3S-1Yg"/>
+                                                <constraint firstItem="mqx-an-RrW" firstAttribute="top" secondItem="Caa-6K-L98" secondAttribute="bottom" constant="10" id="HCl-tG-nvK"/>
+                                                <constraint firstAttribute="trailing" secondItem="mqx-an-RrW" secondAttribute="trailing" constant="10" id="ixx-vl-HmY"/>
+                                                <constraint firstItem="Caa-6K-L98" firstAttribute="top" secondItem="aqH-R5-8Hw" secondAttribute="bottom" constant="10" id="lzU-c1-xAW"/>
+                                                <constraint firstAttribute="trailing" secondItem="aqH-R5-8Hw" secondAttribute="trailing" constant="10" id="ojg-MA-gHR"/>
+                                                <constraint firstItem="mqx-an-RrW" firstAttribute="leading" secondItem="0ar-Ha-ftJ" secondAttribute="leading" constant="10" id="tWf-sz-sRz"/>
+                                                <constraint firstItem="aqH-R5-8Hw" firstAttribute="leading" secondItem="0ar-Ha-ftJ" secondAttribute="leading" constant="10" id="u3O-io-67B"/>
+                                                <constraint firstAttribute="bottom" secondItem="mqx-an-RrW" secondAttribute="bottom" constant="11" id="xbf-oU-n99"/>
+                                                <constraint firstItem="Caa-6K-L98" firstAttribute="leading" secondItem="0ar-Ha-ftJ" secondAttribute="leading" constant="10" id="xhi-nf-aXj"/>
+                                                <constraint firstItem="aqH-R5-8Hw" firstAttribute="top" secondItem="0ar-Ha-ftJ" secondAttribute="top" constant="5" id="zUs-ix-RId"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="newsContentLbl" destination="mqx-an-RrW" id="bOk-3d-zyf"/>
+                                            <outlet property="newsPhoto" destination="Caa-6K-L98" id="hri-5t-2zr"/>
+                                            <outlet property="newsTitleLbl" destination="aqH-R5-8Hw" id="adB-ua-HzK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="VJW-oq-hox" id="tjn-ry-VB8"/>
+                                    <outlet property="delegate" destination="VJW-oq-hox" id="dew-QK-bOT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h8A-ab-MQb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dGM-08-c0y" firstAttribute="bottom" secondItem="h8A-ab-MQb" secondAttribute="bottom" id="5Op-GE-eGD"/>
+                            <constraint firstItem="dGM-08-c0y" firstAttribute="leading" secondItem="h8A-ab-MQb" secondAttribute="leading" id="Bfo-kd-sha"/>
+                            <constraint firstItem="LxC-h7-H85" firstAttribute="trailing" secondItem="h8A-ab-MQb" secondAttribute="trailing" id="V3F-r0-Bma"/>
+                            <constraint firstItem="dGM-08-c0y" firstAttribute="trailing" secondItem="h8A-ab-MQb" secondAttribute="trailing" id="Xb0-aT-KoC"/>
+                            <constraint firstItem="LxC-h7-H85" firstAttribute="top" secondItem="h8A-ab-MQb" secondAttribute="top" id="dDr-8I-f2x"/>
+                            <constraint firstItem="LxC-h7-H85" firstAttribute="leading" secondItem="h8A-ab-MQb" secondAttribute="leading" id="fN8-Vw-oe4"/>
+                            <constraint firstItem="dGM-08-c0y" firstAttribute="top" secondItem="LxC-h7-H85" secondAttribute="bottom" constant="50" id="rC3-lS-wah"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="dGM-08-c0y" id="IpT-br-iD5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEj-sI-rXa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8490.8396946564881" y="80.985915492957744"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L4T-Wo-8hB">
+            <objects>
+                <viewController id="f6I-dP-PTP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sJn-SK-hHB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mt-nH-EHb">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xve-gl-D11">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NNd-sJ-WeV">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeO-Nv-r7L">
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="150" id="NFT-4r-3lV"/>
+                                                        </constraints>
+                                                        <string key="text">JSON Decoding: It seems like there might be an issue with the JSON decoding. You are trying to decode the response data into an array of NewsData, but the response data might not be directly an array. You need to inspect the JSON structure and adjust your decoding accordingly. Assuming the response data has a articles key that holds an array of news articles, you can modify the decoding as follows:</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HYe-7S-MJ8">
+                                                        <rect key="frame" x="0.0" y="160" width="393" height="300"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="300" id="lwv-4s-xLb"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTc-Os-A9S">
+                                                        <rect key="frame" x="0.0" y="470" width="393" height="289"/>
+                                                        <mutableString key="text">JSON Decoding: It seems like there might be an issue with the JSON decoding. You are trying to decode the response data into an array of NewsData, but the response data might not be directly an array. You need to inspect the JSON structure and adjust your decoding accordingly. Assuming the response data has a articles key that holds an array of news articles, you can modify the decoding as follows:JSON Decoding: It seems like there might be an issue with the JSON decoding. You are trying to decode the response data into an array of NewsData, but the response data might not be directly an array. You need to inspect the JSON structure and adjust your decoding accordingly. Assuming the response data has a articles key that holds an array of news articles, you can modify the decoding as follows:JSON Decoding: It seems like there might be an issue with the JSON decoding. You are trying to decode the response data into an array of NewsData, but the response data might not be directly an array. You need to inspect the JSON structure and adjust your decoding accordingly. Assuming the response data has a articles key that holds an array of news articles, you can modify the decoding as follows:</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="NNd-sJ-WeV" secondAttribute="bottom" id="7oR-J3-g7Z"/>
+                                            <constraint firstItem="NNd-sJ-WeV" firstAttribute="top" secondItem="Xve-gl-D11" secondAttribute="top" id="9af-cF-sFf"/>
+                                            <constraint firstAttribute="height" constant="759" id="awe-SC-PeT"/>
+                                            <constraint firstAttribute="width" constant="393" id="mDr-S6-Fsr"/>
+                                            <constraint firstAttribute="trailing" secondItem="NNd-sJ-WeV" secondAttribute="trailing" id="x7s-ne-bQM"/>
+                                            <constraint firstItem="NNd-sJ-WeV" firstAttribute="leading" secondItem="Xve-gl-D11" secondAttribute="leading" id="zgJ-Kd-S5x"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Xve-gl-D11" secondAttribute="bottom" id="19T-T4-tU4"/>
+                                    <constraint firstItem="Xve-gl-D11" firstAttribute="width" secondItem="5mt-nH-EHb" secondAttribute="width" id="8BP-PJ-efc"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xve-gl-D11" secondAttribute="trailing" id="Q9g-Qy-4Ga"/>
+                                    <constraint firstItem="Xve-gl-D11" firstAttribute="top" secondItem="5mt-nH-EHb" secondAttribute="top" id="V81-ZY-gje"/>
+                                    <constraint firstItem="Xve-gl-D11" firstAttribute="leading" secondItem="5mt-nH-EHb" secondAttribute="leading" id="bNK-6U-Hpg"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Elv-VC-90A"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5mt-nH-EHb" firstAttribute="leading" secondItem="Elv-VC-90A" secondAttribute="leading" id="IOR-t9-7u2"/>
+                            <constraint firstItem="5mt-nH-EHb" firstAttribute="bottom" secondItem="Elv-VC-90A" secondAttribute="bottom" id="Tmn-n3-gHP"/>
+                            <constraint firstItem="5mt-nH-EHb" firstAttribute="top" secondItem="Elv-VC-90A" secondAttribute="top" id="cTq-3H-3al"/>
+                            <constraint firstItem="5mt-nH-EHb" firstAttribute="trailing" secondItem="Elv-VC-90A" secondAttribute="trailing" id="puA-Df-J11"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F1j-Ay-98B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9231.2977099236632" y="79.577464788732399"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="lrU-Hd-JfD">
             <objects>
@@ -551,6 +718,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
