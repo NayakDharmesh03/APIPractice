@@ -151,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				E3F3F3722A262CA7004659FE /* Reference resources */,
-				E3F3F36D2A25FA32004659FE /* POST Mathod */,
+				E3F3F36D2A25FA32004659FE /* POST, PUT, DELETE Mathod */,
 				E3F3F36C2A25F0DB004659FE /* Model */,
 				E3F531412A24B60300F65396 /* Alamofire */,
 				E332C1F02A2085E300E1BB03 /* LazyLoading Images */,
@@ -247,12 +247,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		E3F3F36D2A25FA32004659FE /* POST Mathod */ = {
+		E3F3F36D2A25FA32004659FE /* POST, PUT, DELETE Mathod */ = {
 			isa = PBXGroup;
 			children = (
 				E3F3F36E2A25FA54004659FE /* POSTMethodVC.swift */,
 			);
-			path = "POST Mathod";
+			path = "POST, PUT, DELETE Mathod";
 			sourceTree = "<group>";
 		};
 		E3F3F3722A262CA7004659FE /* Reference resources */ = {
