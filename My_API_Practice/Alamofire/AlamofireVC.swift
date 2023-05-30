@@ -16,6 +16,8 @@ class AlamofireVC: UIViewController {
         super.viewDidLoad()
         getNewsData()
     }
+    
+    //using alamofire in this so getting data code is too small ;)
     func getNewsData(){
        
         AF.request("https://newsapi.org/v2/top-headlines?country=us&apiKey=09e6198529ea454189a331720ef016a7").response { response in

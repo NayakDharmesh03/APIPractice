@@ -35,6 +35,10 @@
 		E3E0D5CD2A1F5ECA0057002A /* DetailArticles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E0D5CC2A1F5ECA0057002A /* DetailArticles.swift */; };
 		E3ED37542A1E2AD800D7F230 /* FetchDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED37532A1E2AD700D7F230 /* FetchDataViewController.swift */; };
 		E3ED37562A1E2BA200D7F230 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ED37552A1E2BA200D7F230 /* NewsTableViewCell.swift */; };
+		E3F3F36F2A25FA54004659FE /* POSTMethodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F3F36E2A25FA54004659FE /* POSTMethodVC.swift */; };
+		E3F3F3712A25FA95004659FE /* AddProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F3F3702A25FA95004659FE /* AddProduct.swift */; };
+		E3F3F3742A262D03004659FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F3F3732A262D03004659FE /* UserModel.swift */; };
+		E3F3F3762A262F6C004659FE /* NestedJsonDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F3F3752A262F6C004659FE /* NestedJsonDataVC.swift */; };
 		E3F531432A24B62700F65396 /* AlamofireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F531422A24B62700F65396 /* AlamofireVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +75,10 @@
 		E3E0D5CC2A1F5ECA0057002A /* DetailArticles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArticles.swift; sourceTree = "<group>"; };
 		E3ED37532A1E2AD700D7F230 /* FetchDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDataViewController.swift; sourceTree = "<group>"; };
 		E3ED37552A1E2BA200D7F230 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		E3F3F36E2A25FA54004659FE /* POSTMethodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POSTMethodVC.swift; sourceTree = "<group>"; };
+		E3F3F3702A25FA95004659FE /* AddProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProduct.swift; sourceTree = "<group>"; };
+		E3F3F3732A262D03004659FE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E3F3F3752A262F6C004659FE /* NestedJsonDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedJsonDataVC.swift; sourceTree = "<group>"; };
 		E3F531422A24B62700F65396 /* AlamofireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,7 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				E332C1E72A20753000E1BB03 /* KingFisherLibraryVC.swift */,
-				E332C1EA2A20755E00E1BB03 /* DogsData.swift */,
 				E332C1EC2A20757200E1BB03 /* ImagesTableViewCell.swift */,
 			);
 			path = KingFisherLibrary;
@@ -143,6 +150,9 @@
 		E35095E32A1C87AC00ADF343 /* My_API_Practice */ = {
 			isa = PBXGroup;
 			children = (
+				E3F3F3722A262CA7004659FE /* Reference resources */,
+				E3F3F36D2A25FA32004659FE /* POST Mathod */,
+				E3F3F36C2A25F0DB004659FE /* Model */,
 				E3F531412A24B60300F65396 /* Alamofire */,
 				E332C1F02A2085E300E1BB03 /* LazyLoading Images */,
 				E332C1E92A20753900E1BB03 /* KingFisherLibrary */,
@@ -208,7 +218,6 @@
 		E3E0D5B42A1F42610057002A /* GetPhotoAPI */ = {
 			isa = PBXGroup;
 			children = (
-				E3E0D5B52A1F42A90057002A /* Photos.swift */,
 				E3E0D5B72A1F43450057002A /* PhotosAPIManager.swift */,
 				E3E0D5BB2A1F43C30057002A /* PhotosCell.swift */,
 				E3E0D5BC2A1F43C30057002A /* PhotosCell.xib */,
@@ -219,13 +228,40 @@
 		E3E0D5BF2A1F548E0057002A /* GetArticlesAPI */ = {
 			isa = PBXGroup;
 			children = (
-				E3E0D5C02A1F54B20057002A /* Articles.swift */,
 				E3E0D5CC2A1F5ECA0057002A /* DetailArticles.swift */,
 				E3E0D5C22A1F55FE0057002A /* GetArticles.swift */,
 				E3E0D5C62A1F576B0057002A /* ArticlesCell.swift */,
 				E3E0D5C72A1F576B0057002A /* ArticlesCell.xib */,
 			);
 			path = GetArticlesAPI;
+			sourceTree = "<group>";
+		};
+		E3F3F36C2A25F0DB004659FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3E0D5C02A1F54B20057002A /* Articles.swift */,
+				E3E0D5B52A1F42A90057002A /* Photos.swift */,
+				E332C1EA2A20755E00E1BB03 /* DogsData.swift */,
+				E3F3F3702A25FA95004659FE /* AddProduct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3F3F36D2A25FA32004659FE /* POST Mathod */ = {
+			isa = PBXGroup;
+			children = (
+				E3F3F36E2A25FA54004659FE /* POSTMethodVC.swift */,
+			);
+			path = "POST Mathod";
+			sourceTree = "<group>";
+		};
+		E3F3F3722A262CA7004659FE /* Reference resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3F3F3732A262D03004659FE /* UserModel.swift */,
+				E3F3F3752A262F6C004659FE /* NestedJsonDataVC.swift */,
+			);
+			path = "Reference resources";
 			sourceTree = "<group>";
 		};
 		E3F531412A24B60300F65396 /* Alamofire */ = {
@@ -359,14 +395,18 @@
 				E3E0D5B62A1F42A90057002A /* Photos.swift in Sources */,
 				E35095E92A1C87AC00ADF343 /* ViewController.swift in Sources */,
 				E3F531432A24B62700F65396 /* AlamofireVC.swift in Sources */,
+				E3F3F36F2A25FA54004659FE /* POSTMethodVC.swift in Sources */,
+				E3F3F3712A25FA95004659FE /* AddProduct.swift in Sources */,
 				E3E0D5B12A1F35FD0057002A /* APIData.swift in Sources */,
 				E31B68B62A24B84E00D20D2B /* NewsTableCell.swift in Sources */,
+				E3F3F3742A262D03004659FE /* UserModel.swift in Sources */,
 				E332C1ED2A20757200E1BB03 /* ImagesTableViewCell.swift in Sources */,
 				E332C1EB2A20755E00E1BB03 /* DogsData.swift in Sources */,
 				E3E0D5CD2A1F5ECA0057002A /* DetailArticles.swift in Sources */,
 				E35095E52A1C87AC00ADF343 /* AppDelegate.swift in Sources */,
 				E3ED37562A1E2BA200D7F230 /* NewsTableViewCell.swift in Sources */,
 				E35095E72A1C87AC00ADF343 /* SceneDelegate.swift in Sources */,
+				E3F3F3762A262F6C004659FE /* NestedJsonDataVC.swift in Sources */,
 				E3E0D5C12A1F54B20057002A /* Articles.swift in Sources */,
 				E3E0D5BD2A1F43C30057002A /* PhotosCell.swift in Sources */,
 				E3E0D5C32A1F55FE0057002A /* GetArticles.swift in Sources */,
@@ -531,6 +571,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,6 +600,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
