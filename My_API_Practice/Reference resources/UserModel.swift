@@ -33,6 +33,7 @@ struct Geo: Codable {
     let lat, lng: String
 }
 
+
 // MARK: - Company
 struct Company: Codable {
     let name, catchPhrase, bs: String

@@ -12,6 +12,7 @@ class POSTMethodVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
          addProduct()
         
          loadData() //without alamofire library

@@ -50,12 +50,12 @@ extension PhotosAPIManager : UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! PhotosCell
         let photo = photos[indexPath.row]
-        cell.idLbl.text = String(photo.id)
+        cell.idLbl.text = photo.id
         cell.titleLbl.text = photo.title
         
         // Load the images asynchronously
                DispatchQueue.global().async {
-                   if let imageData = try? Data(contentsOf: photo.url),
+                   if let imageData = try? Data(photo.url!.utf8),
                       let image = UIImage(data: imageData) {
                        DispatchQueue.main.async {
                            cell.UrlImage.image = image
@@ -63,7 +63,7 @@ extension PhotosAPIManager : UITableViewDataSource{
                        }
                    }
                    
-                   if let thumbnailData = try? Data(contentsOf: photo.thumbnailUrl),
+                   if let thumbnailData = try? Data(photo.thumbnailUrl!.utf8),
                       let thumbnailImage = UIImage(data: thumbnailData) {
                        DispatchQueue.main.async {
                            cell.thumbnailUrlImage.image = thumbnailImage

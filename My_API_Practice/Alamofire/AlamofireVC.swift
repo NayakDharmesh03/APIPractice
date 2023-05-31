@@ -64,3 +64,15 @@ extension AlamofireVC : UITableViewDataSource{
         return cell
     }
 }
+extension AlamofireVC : UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //when i click in cell then navigating other controller
+        let  nextVC = storyboard?.instantiateViewController(withIdentifier: "DetailNewsVC") as! DetailNewsVC
+        
+        //sending data this controller to other
+        nextVC.newsContent = articlesList[indexPath.row]
+        
+        navigationController?.pushViewController(nextVC, animated: true)
+    }
+}

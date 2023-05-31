@@ -10,20 +10,27 @@ import Kingfisher
 
 class GetArticles: UIViewController {
 
-    var articlesList : [ArticleData] = []
+    var articlesList : [ArticleData] = [] //Array of ArticleData
+    
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //custome cell register
         tableView.register(UINib(nibName: "ArticlesCell", bundle: nil), forCellReuseIdentifier: "cell")
         // Do any additional setup after loading the view.
     }
     
+    
+    //FetchData  button Action
     @IBAction func downloadPhotosAction(_ sender: UIButton) {
         fetchData()
     }
+    
     func fetchData() {
-        let url = URL(string:"https://newsapi.org/v2/top-headlines?country=us&apiKey=09e6198529ea454189a331720ef016a7" )
+        let url = URL(string:"https://newsapi.org/v2/top-headlines?country=us&apiKey=09e6198529ea454189a331720ef016a7")
+        
         let dataTask = URLSession.shared.dataTask(with: url!) { data, response, error in
             
             guard let data = data , error == nil else{
@@ -37,6 +44,7 @@ class GetArticles: UIViewController {
                 print("Error Occured while Decoding JSON into swift Structure  \(error)")
             }
             self.articlesList = newsFullList!.articles
+            
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -96,7 +104,6 @@ extension GetArticles : UITableViewDataSource , UITableViewDelegate{
         else{
             cell.newsPhoto.image = UIImage(named: "NoImage")
         }
-        
         return cell
 
     }
@@ -104,8 +111,12 @@ extension GetArticles : UITableViewDataSource , UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        //when i click in cell then navigating other controller
         let  nextVC = storyboard?.instantiateViewController(withIdentifier: "DetailArticles") as! DetailArticles
+        
+        //sending data this controller to other
         nextVC.newsContent = articlesList[indexPath.row]
+        
         navigationController?.pushViewController(nextVC, animated: true)
     }
     

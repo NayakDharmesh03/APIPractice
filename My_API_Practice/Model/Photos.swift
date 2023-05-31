@@ -7,8 +7,8 @@
 
 import Foundation
 struct Photos : Codable {
-    let id: Int
-    let title: String
-    let url: URL
-    let thumbnailUrl: URL
+    let id: String?
+    let title: String?
+    let url: String?
+    let thumbnailUrl: String?
 }

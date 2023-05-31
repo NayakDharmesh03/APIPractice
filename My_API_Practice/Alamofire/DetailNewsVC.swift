@@ -1,13 +1,14 @@
 //
-//  DetailArticles.swift
+//  DetailNewsVC.swift
 //  My_API_Practice
 //
-//  Created by MacbookAir_32 on 25/05/23.
+//  Created by MacbookAir_32 on 31/05/23.
 //
 
 import UIKit
 
-class DetailArticles: UIViewController {
+class DetailNewsVC: UIViewController {
+    
     @IBOutlet weak var headlineLbl: UILabel!
     @IBOutlet weak var newsPhoto: UIImageView!
     @IBOutlet weak var contentLbl: UILabel!
