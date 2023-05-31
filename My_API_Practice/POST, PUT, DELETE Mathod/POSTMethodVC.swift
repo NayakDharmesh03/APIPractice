@@ -7,6 +7,8 @@
 
 //We can tell that they staged because they're under the "Changes to be committed" heading. 
 
+//Now the files are displayed in green and git tells us both of them are new and they are now tracked and staged.
+
 import UIKit
 import Alamofire
 
