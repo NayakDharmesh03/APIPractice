@@ -5,6 +5,8 @@
 //  Created by MacbookAir_32 on 30/05/23.
 //
 
+//Now the files are displayed in green and git tells us both of them are new and they are now tracked and staged.
+
 import UIKit
 import Alamofire
 
